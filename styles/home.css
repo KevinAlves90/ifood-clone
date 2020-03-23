@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #EA2F3C;
+}
+
+header #content{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 100%;
+}
+
+header #content #logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-grow: 1;
+}
+
+header #content #content-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#lista{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li{
+    margin-right: 3pc;
+    color: #FFFFFF;
+}
+
+#content-nav button{
+    background-color: #EA2F3C;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    height: 55px;
+    width: 147px;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+
+
+    width: 100%;
+    height: 110vh;
+    background-color: #EA2F3C;
+
+}
+
+.cabecalho #left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-grow: 3;
+    background-image: url(../images/ssi-cover.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 340.64px 554px;
+
+}
+
+.cabecalho #left #textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 13%;
+    margin-top: 10%;
+    height: 70%;
+    width: 50%;
+}
+
+.cabecalho #left #textos #principal{
+    color: #FFFFFF;
+    font-size: 45pt;
+}
+
+.cabecalho #left #textos #principal p{
+    margin: 1%;
+    font-weight: 700;
+}
+
+.cabecalho #left #textos #de-baixo{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.cabecalho #left #textos #de-baixo div p{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13pt;
+}
+
+.cabecalho #right{
+    flex-grow: 2;
+}
+
+.passos{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 95vh;
+    background-color: #FFFFFF;
+}
+
+.passos #cima{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+
+    font-size: 35pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.passos #baixo{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.passos #baixo #subbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.passos #baixo #subbox .element-passos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+    width: 23%;
+}
+
+.element-passos h3{
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 700;
+    margin: 0;
+}
+
+.element-passos p{
+    text-align: center;
+    font-size: 15pt;
+    color: #778BA0;
+}
+
+.faturamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    width: 100%;
+    height: 65vh;
+    background-color: #EA2F3C;
+}
+
+.faturamento #fatu-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: fit-content;
+}
+
+.faturamento #fatu-content #fatu-title{
+    width: 100%;
+    height: fit-content;
+    color: #FFFFFF;
+    font-size: 40pt;
+    margin-bottom: 2%;
+}
+
+.faturamento #fatu-content #fatu-title h3{
+    margin: 0;
+}
+
+.faturamento #fatu-content #fatu-letters{
+    width: fit-content;
+    height: fit-content;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.faturamento #fatu-content #fatu-letters p{
+    margin: 0;
+}
+
+
+.planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: 90%;
+    box-shadow: 5px 5px 5px 5px rgb(231, 231, 231);
+    border-radius: 10px;
+}
+
+.carac{
+    display: flex;
+    flex-grow: 1;
+}
+
+.frase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.ponto{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: fit-content;
+}
+
+.ponto .check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.ponto .txt{
+    flex-grow: 1;
+    margin-left: 3%;
+}
+
+.ponto .txt p{
+    margin: 0;
+    color: #737373;
+    font-size: 15pt;
+}
+
+.ponto .txt span{
+    color: #A6A6A5;
+    font-size: 12pt;
+}
+
+.assinar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+
+
+    background-color: #EA2F3C;
+    background-image: url(../images/ifood-arrow.svg);
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.assinar div{
+    width: 70%;
+    height: fit-content;
+    text-align: center;
+}
+
+.assinar div p{
+    font-size: 40pt;
+    font-weight: 500;
+}
+
+.assinar button{
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #EA2F3C;
+    padding: 1em 2em;
+
+    box-shadow: inset 0 0 1em #ffffff, 0 0 1em #FFFFFF;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+}
+
+#perguntas{
+    height: 90%;
+    width: 40%;
+    color: #778BA0;
+    margin-left: 2%;
+    margin-right: -2%;
+}
+
+#perguntas h2{
+    font-size: 35pt;
+    font-weight: 900;
+    color: #000000;
+}
+
+#perguntas p{
+    font-size: 20pt;
+}
+
+#perguntas p span{
+    color: #737373;
+    font-weight: 700;
+}
+
+#duvidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 45%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+#duvidas .setor{
+    font-weight: 300;
+}
+
+
+.avisos{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #FFFFFF;
+    color: #778BA0;
+}
+
+.avisos p{
+    font-size: 10pt;
+    margin-left: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
